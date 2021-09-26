@@ -21,10 +21,30 @@
         </div>
     </div>
 
+    <div id="transaction-area">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Deposit</h5>
+                <h2>$00</h2>
+            </div>
+            <div class="col-md-4">
+                <h5>WIthdraw</h5>
+                <h2>$00</h2>
+            </div>
+            <div class="col-md-4">
+                <h5>Balance</h5>
+                <h2>$00</h2>
+            </div>
+        </div>
+    </div>
+
     <script>
         const loginBtn= document.getElementById("login-id");
-        loginBtn.addEventListener("mouseleave",function(){
-            console.log("amadek aksdjfasd");
+        loginBtn.addEventListener("click",function(){
+            const loginArea= document.getElementById("login-area");
+            loginArea.style.display ="none";
+            const TransactionArea = document.getElementById("transaction-area");
+            TransactionArea.style.display ="block"; 
         })
     </script>
     
